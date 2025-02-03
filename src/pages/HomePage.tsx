@@ -4,6 +4,7 @@ import { LoginOutlined, LogoutOutlined } from "@ant-design/icons";
 import "../styles/HomePage.css";
 import { useState } from "react";
 import Image from "../images/NikeShoe.jpg";
+import { Link } from "react-router-dom";
 
 const { Header, Content, Footer } = Layout;
 const queryClient = new QueryClient();
@@ -22,7 +23,7 @@ function HomePage() {
 
             <Space className="nav-links">
               <Button type="link" className="nav-link">
-                Products
+                <Link to="/products">Products</Link>
               </Button>
               <Button type="link" className="nav-link">
                 About
